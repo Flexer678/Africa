@@ -1,6 +1,6 @@
 const register = document.querySelector('.register')
 const firstName = document.querySelector('.f_name')
-
+let h = ""
 
 
 
