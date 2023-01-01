@@ -41,24 +41,24 @@ header{
     }
 
     16% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.199), rgb(0, 0, 0)),url(Africa/assets/slide2.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.199), rgb(0, 0, 0)),url(/Africa/assets/slide2.jpg);
         background-size: cover;
         background-position: center ;
     }
 
     32% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.199), rgb(0, 0, 0)),url(Africa/assets/slide3.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.199), rgb(0, 0, 0)),url(/Africa/assets/slide3.jpg);
         background-size: cover;
         background-position: center ;
     }
 
     48% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.199), rgb(0, 0, 0)),url(Africa/assets/slide4.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.199), rgb(0, 0, 0)),url(/Africa/assets/slide4.jpg);
         background-size: cover;
         background-position: center ;
     }
     70% {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.199), rgb(0, 0, 0)),url(Africa/assets/slide5.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.199), rgb(0, 0, 0)),url(/Africa/assets/slide5.jpg);
         background-size: cover;
         background-position: center ;
     }
@@ -225,7 +225,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.892),10%,rgba(255, 255, 255, 0)),url(Africa/assets/about_us.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.892),10%,rgba(255, 255, 255, 0)),url(/Africa/assets/about_us.jpg);
     background-size: cover;
     
     height: 100vh;
