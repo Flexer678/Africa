@@ -51,7 +51,6 @@ profile.addEventListener("click", function(){
 signout.addEventListener('click', function(){
     profile.innerHTML = "JOIN";
     deleteCookies()
-    member.style.display = "none"
     //window.location.href = "./reset.html"
 })
 
@@ -59,6 +58,7 @@ function deleteCookies() {
     var allCookies = document.cookie.split(';');
     for (var i = 0; i < allCookies.length; i++)
     document.cookie = allCookies[i] + "=;expires="+ new Date(0).toUTCString();
+    member.style.display = "none"
     alert("unable to logout")
     window.location.replace('index.html');
 }
