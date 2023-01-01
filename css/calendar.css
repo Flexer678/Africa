@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+#calendar {
+
+    display: none;
+    max-width: 800px;
+}
+
+.month {
+    padding: 10px;
+    width: 100%;
+    background: black;
+    text-align: center; 
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+#weekdays li {
+    color: #666;
+    text-align: center;
+}
+
+#days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+#days li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+    padding: 30px;
+    margin: 3px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#days li.empty {
+    border: none;
+    cursor: default;
+}
+
+#days li.active {
+    background-color:black;
+    color: white !important;
+}
+
+#next,
+#prev {
+    cursor: pointer;
+}
+
+
+.event{
+    display: grid;
+    text-align: center;
+    height: 20vh;
+    background-color: white;
+    
+}
+.specific_event{
+    color: #666;
+    font: lighter;
+    font-size: 30px;
+}
+
+
+#select{
+    font-size: 40px;
+    padding: 100px;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 720px) {
+
+    .weekdays li,
+    #days li {
+        width: 13.1%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .weekdays li,
+    #days li {
+        width: 12.5%;
+    }
+
+    #days li .active {
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+
+    .weekdays li,
+    #days li {
+        width: 12.2%;
+    }
+}
+
+#days,
+#weekdays {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+@media all and (-ms-high-contrast: none) {
+    #days {
+        display: -ms-grid;
+        -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+.calendar_container{
+    height: 80vh;
+        width: 40vw;
+    border-radius: 20px;
+    background:linear-gradient(130deg,white, gold, rgb(43, 37, 0));
+    display: none;
+    align-items: center;
+    overflow: scroll;
+    
+    justify-content: center;
+}
+.calendar_container::-webkit-scrollbar {
+    display: none;
+}

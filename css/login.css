@@ -1,0 +1,58 @@
+body{
+    background:linear-gradient(135deg,black,rgba(255, 243, 225, 0.054)), url(/assets/login_background.jpg);
+    background-size: cover;
+}
+
+
+
+.sign_in{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign_in input{
+    border: 0px;
+    border-radius: 20px;
+    width: 70vw;
+    background-color: antiquewhite;
+    padding: 30px;
+    height: 30px;
+    font-size: larger;
+    
+}
+
+.sign_in h2{
+    padding-top: 20vh;
+    font-size: 60px;
+    color: gold;
+}
+
+
+
+
+input[type=submit]{
+    background-color: gold;
+    border: none;
+    color: black;
+    font-size:20px;
+    font-weight: bold;
+    padding: 36px 42px;
+    text-decoration: none;
+    margin: 0px 2px;
+    cursor: pointer;
+}
+
+
+.switch{
+    justify-self: center;
+    background-color: rgba(250, 235, 215, 0.57);
+    padding: 2px;
+    width: 30vw;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight:light;
+}

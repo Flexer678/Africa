@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="assets/logo.png" type="image/gif">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <link rel="stylesheet" href="css/members_page.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/calendar.css" />
+
+</head>
+<body>
+    <nav style="background: black;">
+        <a href="index.html"><img class="logo" src="assets/logo.png"></a>
+        <ul class="nav_links">
+            <li><a href="index.html#page2">HISTORY</a></li>
+            <li><a href="index.html#page3">PROJECTS</a></li>
+            <li><a href="index.html#page4">ABOUT US</a></li>
+            <li><a href="index.html#page5">CONTACT</a></li>
+        </ul>
+        <a class="join" href="#"><button>JOIN</button></a>
+        <button class="menu"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+    <!--theres something in stylles.css that stops the divs from dfisplaying-->
+    <div class="NavHolder">*</div>
+    <div class="Attention_holder">
+        <div class="Attention">
+            <h1>Attention! </h1>
+            <h2>Some of these information comes from 3rd party websites.</h2>
+            <!--THE INFORMATION-->
+            <!--https://www.nbcnews.com/nbcblk-->
+        </div>
+    </div>
+    <div class="welcome">
+        <h1></h1>
+    </div >
+    <div 
+    class="feed" 
+    data-aos="fade-up" 
+    data-aos-delay="200">
+        <div class="ring">Loading
+            <span></span>
+        </div>
+            <div class="calendar_container">
+                <div id="calendar">
+                    <div class="month">
+                        <ul>
+                            <li id="prev"><i class="fa-solid fa-arrow-left"></i></li>
+                            <li id="month"></li>
+                            <li id="year"></li>
+                            <li id="next"><i class="fa-solid fa-arrow-right"></i></li>
+                        </ul>
+                    </div>
+            
+                    <ul id="weekdays">
+                        <li>Mo</li>
+                        <li>Tu</li>
+                        <li>We</li>
+                        <li>Th</li>
+                        <li>fr</li>
+                        <li>sa</li>
+                        <li>Su</li>
+                    </ul>
+            
+                <ul id="days"></ul>
+                <div class="event">
+                    <diV> <span id="select"></span></div>
+                    <div class="specific_event">no events here</div>
+                </div>
+                    
+                
+                </div>
+            </div>
+            <div class="news">
+                <div class="title">News</div>
+                <div class="container">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+    </div>
+    <footer class="contacts" id="page5">
+        <h2>Contacts:</h2>
+        <div class="contact_info">
+            <h3>Phone number:</h3>
+            <h3>1-639 *** ****</h3>
+        </div>
+        <div class="contact_info">
+            <h3>Email:</h3>
+            <h3>Alexander.********@gmail.com</h3>
+        </div>
+        <div class="social_media">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </footer>
+    <script src="/js/calendar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/js/member.js"></script>
+    <script src="/js/member_info.js"></script>
+    <script src="/js/feed.js"></script>
+    <script src="/js/news.js"></script>
+</body>
+</html>
