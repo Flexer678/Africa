@@ -67,6 +67,6 @@ function deleteCookies() {
             'domain=' + window.location.host + ';' +
             'secure=;';
     }
-    member.style.display = "none
+    member.style.display = "none";
     window.location.replace('index.html');
 }
