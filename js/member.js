@@ -57,8 +57,8 @@ signout.addEventListener('click', function(){
 
 function deleteCookies() {
     var allCookies = document.cookie.split(';');
-    for (var i = 0; i < allCookies.length; i++){
-        document.cookie = allCookies[i] + "=;expires="+ new Date(0).toUTCString();
-    }
+    for (var i = 0; i < allCookies.length; i++)
+    document.cookie = allCookies[i] + "=;expires="+ new Date(0).toUTCString();
+    alert("unable to logout")
     window.location.replace('index.html');
 }
