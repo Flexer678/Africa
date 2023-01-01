@@ -46,7 +46,7 @@ body{
 }
 
 
-input[type=submit]{
+input[type=button]{
     background-color: gold;
     border: none;
     color: black;
