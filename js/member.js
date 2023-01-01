@@ -56,9 +56,17 @@ signout.addEventListener('click', function(){
 
 function deleteCookies() {
     var allCookies = document.cookie.split(';');
-    for (var i = 0; i < allCookies.length; i++)
-    document.cookie = allCookies[i] + "=;expires="+ new Date(0).toUTCString();
-    member.style.display = "none"
-    alert("unable to logout")
+    var cookies = document.cookie.split(";");
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        var eqPos = cookie.indexOf("=");
+        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        document.cookie = name + '=;' +
+            'expires=Thu, 01-Jan-1970 00:00:01 GMT;' +
+            'path=' + '/;' +
+            'domain=' + window.location.host + ';' +
+            'secure=;';
+    }
+    member.style.display = "none
     window.location.replace('index.html');
 }
