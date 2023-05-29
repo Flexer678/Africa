@@ -4,6 +4,17 @@ const menuBar = document.querySelector(".menu")
 
 
 
+
+window.addEventListener("resize",()=>{
+    console.log(window.innerWidth)
+   if (window.innerWidth <= 1170){
+    
+       document.querySelector("body").style.display = "none"
+   }else{
+       document.querySelector("body").style.display = "grid"
+   }
+})
+
 function changeBg(){
     var scrollvalue = window.scrollY
     if(scrollvalue > 568 && scrollvalue < 2336 ){
